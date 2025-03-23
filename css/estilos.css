@@ -1,143 +1,122 @@
 /* Estilos generales */
-* {
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FAF3E0; /* Color crema claro */
+    color: #5A3E36; /* Marrón elegante */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f8f9fa;
-    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
-/* Header */
+/* Estilo del header */
 header {
-    background: linear-gradient(135deg, #444, #222);
-    color: white;
-    width: 100%;
-    padding: 20px 0;
     text-align: center;
-    border-radius: 0 0 10px 10px;
+    padding: 20px;
 }
 
 .logo {
-    width: 120px;
+    width: 120px; /* Tamaño del logo */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 .slogan {
-    font-weight: 700;
     font-size: 1.2rem;
-    margin-top: 10px;
+    font-weight: 500;
+    color: #8B5E3B;
 }
 
-/* Contenedor de productos */
+/* Contenedor principal */
 .container {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra las cards */
-    gap: 15px;
-    margin-top: 20px;
-    padding-bottom: 80px; /* Espacio para que el footer no interfiera */
-}
-/* Estilos de las cards */
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: c;
+    gap: 15px;
+    padding-bottom: 80px; /* Espacio para el footer */
+}
+
+/* Estilos de las cards */
+.card {
+    background: #FFF8E1; /* Color crema claro */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
     width: 100%;
+    max-height: 180px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .card h2 {
-    font-size: 1.4rem;
     margin: 10px 0;
+    font-size: 1.2rem;
+    color: #5A3E36;
 }
 
 .card p {
-    font-size: 1rem;
-    color: #666;
+    font-size: 0.9rem;
+    color: #8B5E3B;
 }
 
+/* Estilo del precio */
 .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #222;
-    margin: 10px 0;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #D2691E;
+    margin: 5px 0;
 }
 
-.card button {
-    background: #222;
+/* Botón de compra */
+button {
+    background: #8B5E3B;
     color: white;
-    padding: 10px 15px;
     border: none;
+    padding: 10px;
+    width: 100%;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    margin-top: 10px;
     transition: background 0.3s ease;
 }
 
-.card button:hover {
-    background: #444;
+button:hover {
+    background: #5A3E36;
 }
 
 /* Footer */
 footer {
-    background: #222;
-    color: white;
     width: 100%;
     text-align: center;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 10px 0;
+    background: #5A3E36;
     position: fixed;
     bottom: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    margin: 0 10px;
+    font-size: 1rem;
 }
 
 footer a:hover {
-    opacity: 0.7;
-}
-
-/* Responsivo */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card {
-        width: 30%;
-    }
+    text-decoration: underline;
 }
