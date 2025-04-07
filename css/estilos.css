@@ -341,7 +341,9 @@ footer a:hover {
     text-align: center;
     margin: 50px 0 30px;
     background: linear-gradient(90deg, #8B4513, #C19A6B); /* marrón a dorado suave */
+    background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     letter-spacing: 2px;
